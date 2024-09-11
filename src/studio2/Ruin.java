@@ -25,7 +25,7 @@ public class Ruin {
 		
 		if(winChance == .5) {
 			
-		expectedRuin = 1 - startAmount/winLimit;
+		expectedRuin = (double)(1 - (startAmount/winLimit));
 			
 		}
 		else {
@@ -76,7 +76,7 @@ public class Ruin {
 			startAmount = tempStartAmount;
 			
 		}
-		System.out.println("Losses: "+ruinCount+" Simulatiuons: "+totalSimulations);
+		System.out.println("Losses: "+ruinCount+" Simulations: "+totalSimulations);
 		System.out.println("Ruin Rate from Simulation: "+((double)ruinCount/totalSimulations) + " Expected Ruin Rate: " + expectedRuin);
 		
 	}
